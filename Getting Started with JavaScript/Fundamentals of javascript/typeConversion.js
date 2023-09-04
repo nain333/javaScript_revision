@@ -31,6 +31,7 @@ console.log(+a)
 /* parseFloat() */
 let num = parseFloat('1.5anythingblah');
 console.log(num)
+console.log(parseFloat('3.14.15'))
 
 /** parseInt() */
 console.log(parseInt('12345'))
