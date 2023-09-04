@@ -14,9 +14,9 @@ console.log(x);
       (=, +=, -=, *=, /=, %=, **=) 
 */
 
-let a = 2;
+// let a = 2;
 
-let b = 5;
+// let b = 5;
 b += 2; // b = b+2
 
 console.log(b);
