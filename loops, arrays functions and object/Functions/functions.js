@@ -14,4 +14,4 @@ function greetUser(userName){
 
 }
 greetUser(userName);
-// the phenomenon going here is also known as function overloading, as we are declaring two functions with the same name but the function signature differes.
+// javaScript doesn't support function overloading, the function signature defined lates will overwrite the previous one.
