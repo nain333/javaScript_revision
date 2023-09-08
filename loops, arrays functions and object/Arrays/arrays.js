@@ -10,4 +10,3 @@ console.log(arr)
 // in javaScript array is hetrogenous
 console.log(arr(3))
 // accessing the element of array indexing starts with 0
- 
