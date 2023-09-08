@@ -39,3 +39,21 @@ for(let student of Students){
     console.log(`Roll No: ${forOfRoll}:${student}`)
 }
 // the iterator is element itself
+
+// find duplicates 
+function findDuplicate(arr) {
+    const seen = [];
+    const duplicates = [];
+
+    for (const item of arr) {
+        if (seen.includes(item)&&!duplicates.includes(item)) {
+            duplicates.push(item);
+            
+        } else {
+            seen.push(item);
+        }
+    }
+
+    return duplicates;
+}
+console.log(findDuplicate([1,4,1,4,1,1,14,4]))
