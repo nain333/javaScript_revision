@@ -70,3 +70,48 @@ const teams2=['Ind','Aus','NZ','ENG']
 // It will create a copy of the arrays and merge them together
 const mergedTeams=teams2.concat(teamsName)
 console.log('Merged teams: ',mergedTeams)
+
+// exersices
+const arr1 = [1,2,34,5]
+const arr2 = arr1.slice()
+console.log(arr2)
+arr2.push(6)
+console.log(arr2)
+
+const arr =  ['a','b','c','d']
+arr.splice(2,'x','y')
+console.log(arr)
+// if you don't specify delteCount in the splice function, it will automatically take the next perameter as deleteCount, since the nextPeramenter is"a" so , it will be discarded and 'y' will be inserted at index 2
+let length = 5;
+let newArray = Array.from({ length }, (_, index) => index * 2);
+console.log(newArray); // Outputs: [0, 2, 4, 6, 8]
+
+ length = 5;
+ newArray = Array.from({ length }, (elementValue, index) => {
+    return `Element at index ${index} has value ${elementValue}`;
+});
+console.log(newArray);
+// reverse a string
+function reverseString(str){
+    //Implement Your function here
+        const itrableStr=Array.from(str)
+        let n = itrableStr.length
+        console.log(n)
+        for(let i=0 ,j =n-1; i<=j; i++,j--){
+            
+            let temp=itrableStr[i];
+            itrableStr[i]=itrableStr[j];
+            itrableStr[j]=temp;
+            
+        }
+        let revString = itrableStr.join('')
+        console.log(revString)
+        return revString
+    }
+    console.log(reverseString("Hello"));
+    //Output : "olleH"
+    console.log('reverseString ',reverseString('hello'))
+
+
+
+
